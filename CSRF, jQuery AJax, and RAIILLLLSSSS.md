@@ -1,13 +1,13 @@
-##CSRF, jQuery AJax, and RAIILLLLSSSS
+## CSRF, jQuery AJax, and RAIILLLLSSSS
 
 
-###JQUERY AJAX & UJS
+### JQUERY AJAX & UJS
 
 Unobstrusive Javascript is a way of using JavaScript to progressively enhance the user experience for capable browsers without negatively impacting clients that do not support or do not enable JavaScript.
 
 jquery-ujs wires event handlers to eligible DOM elements, mostly identified by HTML5 data attributes, to provide enhanced functionality. 
 
-####Before UJS
+#### Before UJS
 ```html
 
 <a href="#" onclick="this.style.backgroundColor='#990000'">Paint it red</a>
@@ -15,7 +15,7 @@ jquery-ujs wires event handlers to eligible DOM elements, mostly identified by H
 
 ```
 
-####AFTER UJS
+#### AFTER UJS
 ```CoffeeScript
   
 @paintIt = (element, backgroundColor, textColor) ->
@@ -38,7 +38,7 @@ $ ->
 
 ```
 
-####POST, PUT, DELETE Links
+#### POST, PUT, DELETE Links
 
 ```
 <%= link_to 'Delete', item, method: :delete %>
@@ -47,7 +47,7 @@ $ ->
 Jquery-ujs attaches a handler to links with the data-method attribute. When the link is clicked, the handler constructs an HTML form along with a hidden input that sets the _method parameter to the requested HTTP verb and submits the form rather than following the link.
 
 
-####Confirmation Dialogs
+#### Confirmation Dialogs
 
 ```
 <%= form_for item, data: { confirm: 'Are you sure?' } %>
@@ -55,7 +55,7 @@ Jquery-ujs attaches a handler to links with the data-method attribute. When the 
 
 Jquery-ujs attaches a handler to links or forms with the data-confirm attribute that displays a JavaScript confirmation dialog.
 
-####Disabling Links and Buttons
+#### Disabling Links and Buttons
 
 ```
 <%= form.submit data: { disable_with: 'Submitting...' } %>
@@ -63,7 +63,7 @@ Jquery-ujs attaches a handler to links or forms with the data-confirm attribute 
 
 Links and buttons that have a data-disable-with attribute get a click handler that disables the element and updates the text of the button to that which was provided in the data attribute and disables the button. If the action is performed via AJAX, the handler will re-enable the button and reset the text when the request completes.
 
-####AJAX Forms
+#### AJAX Forms
 
 ```
 <%= form_for item, remote: true %>
@@ -72,12 +72,12 @@ Links and buttons that have a data-disable-with attribute get a click handler th
 Adding remote: true to your form_for calls in Rails causes jquery-ujs to handle the form submission as an AJAX request. Your controller can handle the AJAX request and return JavaScript to be executed in the response. Thanks to jquery-ujs and Rails’ respond_with, setting remote: true is likely the quickest way to get your Rails application making AJAX requests.
 
 
-####Extensibility
+#### Extensibility
 
 Jquery-ujs exposes its functions in the $.rails namespace and fires many events when submitting AJAX form
 
 
-###What is CSRF?
+### What is CSRF?
 
 CSRF stands for Cross Site Request Forgery. It's a type of application attack method that works by including malicious code or a link in a page that accesses a web application that the user is believed to have authenticated. If the session for that web application has not timed out, an attacker may execute unauthorized commands.
 
@@ -88,7 +88,7 @@ Example 1.
 
 Rails has a few built in countermeasures to help protect an application from these kind of attacks.
 
-#####1. Disallowing cross-site <script> tags
+##### 1. Disallowing cross-site <script> tags
 ```html
 
 <a href="http://www.harmless.com/" onclick="
@@ -102,7 +102,7 @@ Rails has a few built in countermeasures to help protect an application from the
 
 ```
 
-######2. Required Security Token for HTTP Protocol Requests
+###### 2. Required Security Token for HTTP Protocol Requests
 
 ```ruby
 
@@ -129,4 +129,4 @@ Jquery-ujs also updates the CSRF token on all non-AJAX forms on page load, which
 source: http://guides.rubyonrails.org/security.html#cross-site-request-forgery-csrf
 source: https://robots.thoughtbot.com/a-tour-of-rails-jquery-ujs
 
-##:100: :100: :100: :100: :100: :100: :100: :100: :100:
+## :100: :100: :100: :100: :100: :100: :100: :100: :100:
