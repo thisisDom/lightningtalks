@@ -1,7 +1,7 @@
 ## CSRF, jQuery AJax, and RAIILLLLSSSS
 
 
-### JQUERY AJAX & UJS
+### JQUERY AJAX & UJS(Unobstrusive Javascript)
 
 Unobstrusive Javascript is a way of using JavaScript to progressively enhance the user experience for capable browsers without negatively impacting clients that do not support or do not enable JavaScript.
 
