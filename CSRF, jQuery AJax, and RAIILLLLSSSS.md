@@ -1,4 +1,4 @@
-## CSRF, jQuery AJax, and RAIILLLLSSSS
+## jQuery AJax, CSRF, and RAIILLLLSSSS
 
 
 ### JQUERY AJAX & UJS(Unobstrusive Javascript)
