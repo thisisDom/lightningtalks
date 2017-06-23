@@ -1,4 +1,4 @@
-## jQuery AJax, CSRF, and RAIILLLLSSSS
+## jQuery AJax, CSRF, and RAIILLLLSSSS :100: :100: :100: :100: :100: :100: :100: :100: :100:
 
 
 ### JQUERY AJAX & UJS(Unobstrusive Javascript)
@@ -70,7 +70,7 @@ Links and buttons that have a data-disable-with attribute get a click handler th
 ```
 
 Adding remote: true to your form_for calls in Rails causes jquery-ujs to handle the form submission as an AJAX request. Your controller can handle the AJAX request and return JavaScript to be executed in the response. Thanks to jquery-ujs and Rails’ respond_with, setting remote: true is likely the quickest way to get your Rails application making AJAX requests.
-
+:blessed:
 
 #### Extensibility
 
@@ -129,4 +129,3 @@ Jquery-ujs also updates the CSRF token on all non-AJAX forms on page load, which
 source: http://guides.rubyonrails.org/security.html#cross-site-request-forgery-csrf     
 source: https://robots.thoughtbot.com/a-tour-of-rails-jquery-ujs
 
-## :100: :100: :100: :100: :100: :100: :100: :100: :100:
