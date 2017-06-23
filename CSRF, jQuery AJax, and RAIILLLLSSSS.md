@@ -126,7 +126,7 @@ Jquery-ujs also updates the CSRF token on all non-AJAX forms on page load, which
 **Note that cross-site scripting (XSS) vulnerabilities bypass all CSRF protections. XSS gives the attacker access to all elements on a page, so they can read the CSRF security token from a form or directly submit the form**
 
 
-source: http://guides.rubyonrails.org/security.html#cross-site-request-forgery-csrf
+source: http://guides.rubyonrails.org/security.html#cross-site-request-forgery-csrf     
 source: https://robots.thoughtbot.com/a-tour-of-rails-jquery-ujs
 
 ## :100: :100: :100: :100: :100: :100: :100: :100: :100:
